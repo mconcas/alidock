@@ -28,6 +28,9 @@ jobs:
         set -e
         set -o pipefail
         python -m pip install --upgrade pip
+        pwd
+        ls -la
+        uname -a
 #        pip install flake8 pytest
 #        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 #     - name: Lint with flake8
