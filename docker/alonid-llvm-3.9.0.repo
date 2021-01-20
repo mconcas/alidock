@@ -1,6 +1,6 @@
 [alonid-llvm-3.9.0]
 name=Copr repo for llvm-3.9.0 owned by alonid
-baseurl=https://copr-be.cloud.fedoraproject.org/results/alonid/llvm-3.9.0/epel-7-$basearch/
+baseurl=https://copr-be.cloud.fedoraproject.org/results/alonid/llvm-3.9.0/epel-8-$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1

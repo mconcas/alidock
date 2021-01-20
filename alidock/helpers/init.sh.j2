@@ -169,8 +169,12 @@ AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
 AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
 AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
 AcceptEnv XMODIFIERS
-LogLevel INFO
+LogLevel DEBUG
+StrictModes no 
 EOF
+
+# Centos 8
+[[ -f /run/nologin ]] && rm -f /run/nologin
 
 # Start the SSH server
 SSH_LOG=("-E" "{{runDir}}/log.txt")
